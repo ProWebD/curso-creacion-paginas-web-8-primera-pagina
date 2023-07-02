@@ -60,7 +60,32 @@ header {
 }
 
 #hero .informacion-contenedor #foto {
+    width: auto;
+    height: 100%;
+}
+
+#hero .informacion-contenedor #foto img {
     width: 200px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+
+#foto:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+#foto:hover img {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 400px) {
+    /* STYLES HERE for DEVICES with physical max-screen width of 480px */
+    #hero .informacion-contenedor #foto img {
+        width: 100px;
+        margin-top: 70px;
+    }
 }
 
 #hero .informacion-contenedor #foto img {
