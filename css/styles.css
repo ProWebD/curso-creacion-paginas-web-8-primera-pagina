@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+#thankyou {
+    width: calc(100% - 40px);
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
